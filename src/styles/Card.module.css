@@ -1,0 +1,13 @@
+.card_wrapper {
+  border-radius: 12px;
+  width: 70px;
+  height: 120px;
+}
+
+.card_fore {
+  background-color:mediumpurple;
+}
+
+.card_back {
+  background-color:indigo;
+}
