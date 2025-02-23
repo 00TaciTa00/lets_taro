@@ -1,12 +1,14 @@
-import Card from "@/components/Card";
+"use client";
+
 import styles from "./page.module.css";
+import TableSection from "@/components/TableSection";
 
 export default function Home() {
   return (
     <div className={styles.page}>
       <header className={styles.header}>header</header>
       <main className={styles.main}>
-        <Card />
+        <TableSection />
       </main>
       <footer className={styles.footer}>footer</footer>
     </div>
