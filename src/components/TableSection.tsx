@@ -1,15 +1,17 @@
 "use client";
 
-import { ReactNode, useRef } from "react";
 import { motion } from "framer-motion";
+import Card from "@/components/Card";
+import { useRef } from "react";
+import styles from "@/styles/TableSection.module.css";
 
-interface TableSectionProps {
-  children: ReactNode;
-}
-
-const TableSection = ({ children }: TableSectionProps) => {
-  const constraintsRef = useRef(null);
-  return <motion.section ref={constraintsRef}>{children}</motion.section>;
+const TableSection = () => {
+  const constraintsRef = useRef<HTMLDivElement>(null);
+  return (
+    <motion.div ref={constraintsRef} className={styles.tablesection}>
+      <Card dragConstraints={constraintsRef} />
+    </motion.div>
+  );
 };
 
 export default TableSection;
